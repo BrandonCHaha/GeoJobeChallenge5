@@ -1,0 +1,59 @@
+.headerStyle {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1d1e2c;
+  color: #f7ebec;
+}
+
+.titleStyle {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mainButtonStyle {
+  background-color: #ddbdd5;
+  color: #1d1e2c;
+}
+
+.mainButtonStyle:hover {
+  background-color: #ac9fbb;
+  transition: 0.3s;
+}
+
+.mainButtonStyle:active {
+  background-color: #ddbdd5 !important;
+  color: #1d1e2c;
+}
+
+.secondaryButtonStyle {
+  background-color: #ac9fbb;
+  color: #1d1e2c;
+}
+
+.secondaryButtonStyle:hover {
+  background-color: #555463;
+  transition: 0.3s;
+}
+
+.secondaryButtonStyle:active {
+  background-color: #ac9fbb !important;
+  color: #1d1e2c;
+}
+
+body {
+  background-color: #ddbdd5;
+}
+
+.mainStyle {
+  padding: 2rem;
+}
+
+.cardStyle {
+  background-color: #1d1e2c;
+}
+
+.itemText {
+  color: #f7ebec;
+}
