@@ -34,7 +34,7 @@ const ArcGISAuth: React.FC<ArcGISAuthProps> = ({
     try {
       const portal = new Portal();
       await portal.load();
-      const user = portal.user?.username;
+      const user = portal.user.username;
       setUsername(user || null);
       if (user) onUserSignIn({ username: user });
     } catch (error) {

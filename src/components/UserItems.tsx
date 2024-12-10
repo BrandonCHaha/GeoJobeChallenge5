@@ -6,7 +6,7 @@ interface UserItem {
   id: string;
   title: string;
   type: string;
-  thumbnailUrl?: string;
+  thumbnailUrl: string;
   tags: string[];
 }
 
@@ -33,7 +33,7 @@ const UserItems: React.FC<{ user: { username: string } | null }> = ({
         };
         const { results } = await portal.queryItems(queryParams);
         setItems(
-          results?.map((item) => ({
+          results.map((item) => ({
             id: item.id,
             title: item.title,
             type: item.type,
