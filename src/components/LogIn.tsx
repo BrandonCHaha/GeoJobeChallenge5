@@ -24,7 +24,6 @@ const ArcGISAuth: React.FC<ArcGISAuthProps> = ({
 
     IdentityManager.registerOAuthInfos([info]);
 
-    // Check sign-in status on load
     IdentityManager.checkSignInStatus(`${info.portalUrl}/sharing`)
       .then(handleAutoSignIn)
       .catch(() => handleSignOut(false));
